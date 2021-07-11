@@ -1,0 +1,29 @@
+* {
+  margin: auto;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+  text-transform: uppercase;
+  background-color: crimson;
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+#write {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+}
+#output h4 {
+  border: 2px solid black;
+  font-weight: 500;
+  text-decoration-line: underline;
+  background-color: gray;
+  text-shadow: black;
+  row-gap: 2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  font-style: oblique;
+}
