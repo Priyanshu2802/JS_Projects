@@ -15,10 +15,18 @@
 
     <h1>Todo-List</h1>
     <div id="write">
-        <button type="submit" class="btn btn-success" onclick="addelement()">ADD</button>
-        <button type="button" class="btn btn-danger" onclick="removediv()">RESET</button>
+        <form id="todoForm">
+            <input id="todoInput">
+            <button type="button" class="btn btn-success" onclick="addelement()">ADD</button>
+            <button type="button" class="btn btn-danger" onclick="removediv()">RESET</button>
+        </form>
     </div>
-    <div id="output"></div>
+    <!-- <div id="output">
+
+    </div> -->
+    <ol id="todoList">
+        
+    </ol>
 </body>
 
 </html>

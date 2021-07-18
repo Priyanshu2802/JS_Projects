@@ -1,12 +1,13 @@
 function addelement(){
-    var s=prompt("WRITE THE TASK!!");
-    //console.log(s);
-    var h2=document.createElement('h4');
+    var s=document.getElementById("todoInput").value;
     var text=document.createTextNode(s);
-    h2.setAttribute('id','out');
-    h2.appendChild(text);
-    document.getElementById('output').appendChild(h2);
+    console.log(text);
+    var new_item=document.createElement("li");
+    var text=document.createTextNode(s);
+    // h2.setAttribute('id','out');
+    new_item.appendChild(text);
+    document.getElementById("todoList").appendChild(new_item);
 }
 function removediv(){
-    document.getElementById('out').remove();
+    document.getElementById('todoList').remove();
 }
