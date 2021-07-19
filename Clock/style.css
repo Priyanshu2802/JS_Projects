@@ -5,7 +5,9 @@
   transform: translate(-50%, -50%);
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 40px 60px;
-  background-image: linear-gradient(50deg, crimson,yellow);
+  background-image: linear-gradient(50deg, crimson, yellow);
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px 10px #ca9176;
 }
 h1 {
   margin: 0px;
