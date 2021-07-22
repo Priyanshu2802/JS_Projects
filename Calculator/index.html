@@ -7,36 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 
 <body>
+
     <div id="container">
-        <button id="one" onclick="one()">1</button>
-        <button id="two" onclick="two()">2</button>
-        <button id="three" onclick="three()">3</button>
-        <br>
-        <button id="four" onclick="four()">4</button>
-        <button id="five" onclick="five()">5</button>
-        <button id="six" onclick="six()">6</button>
-        <br>
-        <button id="seven" onclick="seven()">7</button>
-        <button id="eight" onclick="eight()">8</button>
-        <button id="nine" onclick="nine()">9</button>
-        <button id="zero" onclick="zero()">0</button>
-        <br>
-        <br>
-        <br>
-        <button id="plus" onclick="plus()">+</button>
-        <button id="minus" onclick="minus()">-</button>
-        <button id="multiply" onclick="multiply()">*</button>
-        <button id="divide" onclick="divide()">/</button>
-        <button id="modulo" onclick="modulo()">%</button>
-        <button id="answer" onclick="ans()">=</button>
-        <button id="clear" onclick="clearr()">C</button>
+        <div id="output">
+            <h1 id="out"></h1>
+        </div>
+        <div id="butt">
+            <div class="btn-container">
+                <span id="divide" onclick="divide()">/</span>
+                <span id="modulo" onclick="modulo()">%</span>
+                <span id="clear" onclick="clearr()">C</span>
+                <span id="backspace" onclick="backSpace()"><=</span>
+            </div>
+            <br>
+            <div class="btn-container">
+                <span id="seven" onclick="seven()">7</span>
+                <span id="eight" onclick="eight()">8</span>
+                <span id="nine" onclick="nine()">9</span>
+                <span id="multiply" onclick="multiply()">*</span>
+            </div>
+            <br>
+            <div class="btn-container">
+                <span id="four" onclick="four()">4</span>
+                <span id="five" onclick="five()">5</span>
+                <span id="six" onclick="six()">6</span>
+                <span id="minus" onclick="minus()">-</span>
+            </div>
+            <br>
+            <div class="btn-container">
+                <span id="one" onclick="one()">1</span>
+                <span id="two" onclick="two()">2</span>
+                <span id="three" onclick="three()">3</span>
+                <span id="plus" onclick="plus()">+</span>
+            </div>
+            <br>
+            <div class="btn-container">
+                <span id="zero" onclick="zero()">0</span>
+                <span id="dzero" onclick="dzero()">00</span>
+                <span id="dot" onclick="dot()">.</span>
+                <span id="answer" onclick="ans()">=</span>
+            </div>
+        </div>
     </div>
-    <h1 id="out"></h>
-        <script src="style.js">
-        </script>
+
+    <script src="style.js">
+    </script>
 </body>
 
 </html>
