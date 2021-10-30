@@ -17,7 +17,7 @@ function apicall() {
       let index = Math.round(Math.random() * len);
       console.log(index);
       let str = `<h1 id="card-header">
-       Quotes of the Day !
+       Quotes for the Day
         </h1>
         <div id="card-body">
             ${obj[index].text}
