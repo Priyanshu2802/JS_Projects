@@ -1,9 +1,9 @@
 console.log("its working!");
-setInterval(() => apicall(), 3000);
+apicall();
+// setInterval(() => apicall(), 3000);
 
 function apicall() {
   let card = document.getElementById("card");
-
   const xhr = new XMLHttpRequest();
 
   xhr.open("GET", "https://type.fit/api/quotes", true);
@@ -14,9 +14,10 @@ function apicall() {
       console.log(obj);
       let len = obj.length;
       console.log(len);
-      let index = Math.round(Math.random() * len);
-      console.log(index);
-      let str = `<h1 id="card-header">
+      setInterval(() => {
+        let index = Math.round(Math.random() * len);
+        console.log(index);
+        let str = `<h1 id="card-header">
        Quotes for the Day
         </h1>
         <div id="card-body">
@@ -25,7 +26,8 @@ function apicall() {
             <p id="author">${obj[index].author}</p>
         `;
 
-      card.innerHTML = str;
+        card.innerHTML = str;
+      }, 6000);
     } else {
       card.innerHTML = `<h1>Nothing Found !</h1>`;
     }
